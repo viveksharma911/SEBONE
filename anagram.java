@@ -7,9 +7,13 @@ public class anagram {
 	
                 public static void main(String[] arg) {
                 	
+                	System.out.println("hello");
+                	
+                	
                 	Scanner sc= new Scanner(System.in); 
                     String str = sc.nextLine();
                     String str1 = sc.nextLine();
+                    
                     if(str.length() == str1.length()) {
                     char[]arr = str.toCharArray();
                     Arrays.sort(arr);
@@ -19,6 +23,7 @@ public class anagram {
                     
                     boolean flag = Arrays.equals(arr, arr2);
                     System.out.println(flag);
+                    
                     }
 
                 	
