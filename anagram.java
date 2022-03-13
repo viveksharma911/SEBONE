@@ -9,7 +9,7 @@ public class anagram {
                 	
                 	System.out.println("hello");
                 	
-                	
+                	System.out.println("sajal");
                 	Scanner sc= new Scanner(System.in); 
                     String str = sc.nextLine();
                     String str1 = sc.nextLine();
