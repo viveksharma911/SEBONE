@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class anagram {
 	            
-	    static boolean bool(String s1, String s2) {
+	    public boolean bool(String s1, String s2) {
 	    	boolean flag = false;
 	    	if(s2.length() == s1.length()) {
                 char[]arr = s2.toCharArray();
@@ -26,14 +26,16 @@ public class anagram {
                     String str = sc.nextLine();
                     String str1 = sc.nextLine();
                      
-                    boolean flag = bool(str,str1);
+                    anagram a = new anagram();
+                    if(a.bool(str, str1))
+                    	
+                  {
+                    	System.out.println("anagram");
+                  }
+                    else 
+                    	System.out.println("Not Anagram");
                     
-                    if(flag == true) {
-                    	System.out.println("This is a anagram");
-                    }else {
-                    	System.out.println("This is not anagram");
-                    }
-
+                   
                 	
                 }
 }

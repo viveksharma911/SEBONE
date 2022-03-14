@@ -3,7 +3,7 @@ package viveks;
 import java.util.Scanner;
 
 public class Primenumber {
-	 static  boolean isprime(int n) {
+	 public  boolean isPrime(int n) {
 		   
 		   for (int i = 2; i < n; i++)
 			    if (n % i == 0)
@@ -11,12 +11,13 @@ public class Primenumber {
 			 
 			return true;
 	  }
-	 static int prime(int n) {
+	 public int prime(int n) {
 		 int count = 0;
+		 Primenumber x = new Primenumber();
 		 for(int i=2;i<=n;i++) {
 				
 				
-				if(isprime(i)) {System.out.println(i);  
+				if(x.isPrime(i)) {System.out.println(i);  
 					count++;
 				}
 				
@@ -28,7 +29,8 @@ public class Primenumber {
 		  Scanner scn = new Scanner(System.in);
 		  
 		  int a= scn.nextInt();
-			int count = prime(a);
+		  Primenumber x = new Primenumber();
+			int count = x.prime(a);
 			
 			System.out.println(count);
 		}

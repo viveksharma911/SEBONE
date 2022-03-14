@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class palidrome {
 
-	 public static boolean prime(int n) {
+	     public boolean isPrime(int n) {
 	     int x = n;
 	     int r=0;
 	     int rev=0;
@@ -23,12 +23,13 @@ public class palidrome {
      Scanner sc = new Scanner(System.in);
      
      int n = sc.nextInt();
-     
-     boolean flag = prime(n);
-     if(flag == true) {
+     palidrome a = new palidrome();
+     if(a.isPrime(n)) {
     	 System.out.print("number is palindrome");
      }else {
     	 System.out.print("number is not palindrome");
      }
+     
+     
    }
 }
